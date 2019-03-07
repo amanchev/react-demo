@@ -76,9 +76,9 @@ class Task1 extends Component {
   render() {
     return (
       <form method="post" name="orderTrackingForm" onSubmit= {this.submitorderTrackingForm} style={formStyle} >
-        <input type="text" name="ordernum" value={this.state.fields.ordernum} onChange={this.handleChange} style={inputStyle} />
+        <input type="text" name="ordernum" placeholder="Order number" value={this.state.fields.ordernum} onChange={this.handleChange} style={inputStyle} />
         <div style={errorMsgStyle}>{this.state.errors.ordernum}</div>
-        <input type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange} style={inputStyle} />
+        <input type="text" name="emailid" placeholder="Email address" value={this.state.fields.emailid} onChange={this.handleChange} style={inputStyle} />
         <div style={errorMsgStyle}>{this.state.errors.emailid}</div>
         <input type="submit" value="Proceed"/>
       </form>
